@@ -1,4 +1,7 @@
 # Define a dictionary that holds our pet's attributes.
+from small_treat import SmallTreat
+from medium_treat import MediumTreat
+from large_treat import LargeTreat
 from toy import Toy
 from cuddly_pet import CuddlyPet
 from pet import Pet
@@ -21,6 +24,7 @@ while True:
     1. Feed Pet
     2. Play with pet
     3. Give Toy
+    4. Give a Treat
     ''')
     choice = int(input(': '))
     if choice == 1:
@@ -32,6 +36,20 @@ while True:
     elif choice == 3:
         #give toy to pet
         pet.give_toy(Toy())
+    elif choice == 4:
+        print('''''
+        1. Small Treat
+        2. Medium Treat
+        3. Large Treat
+        ''')
+        treat_type = int(input(": "))
+        if treat_type == 1:
+            pet.give_small_treat(SmallTreat())
+        elif treat_type == 2:
+            pet.give_medium_treat(MediumTreat())
+        elif treat_type == 3:
+            pet.give_large_treat(LargeTreat())
+        
          
     # Each time the loop runs, the pet will need some attention!
     pet.being_alive()
