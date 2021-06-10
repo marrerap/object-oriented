@@ -1,6 +1,6 @@
 class LargeTreat:
     def __init__(self):
-        self.fullness_bonus = 8
+        self.fullness_bonus = 15
         self.current_treat = 1
         
         

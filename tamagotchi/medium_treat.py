@@ -1,6 +1,6 @@
 class MediumTreat:
     def __init__(self):
-        self.fullness_bonus = 5
+        self.fullness_bonus = 10
         self.current_treat = 1
         
         
